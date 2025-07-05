@@ -27,13 +27,14 @@ Operating systems are provisioned from scratch using **Kickstart** and **PXE env
 
 ## Core Technologies
 
-- **NetBox** – Configuration management and authoritative data source  
-- **Proxmox** – Hypervisor and VM orchestration  
-- **Kea DHCP** – Dynamic IP address assignment  
-- **PXE** – Network-based system provisioning  
-- **Ansible Core** – Automation and configuration management  
-- **Ansible Rulebook** – Event-driven orchestration  
-- **CoreDNS** – Lightweight DNS infrastructure
+- [CoreDNS](https://coredns.io/).\
+- [CoreDNS netbox plugin](https://github.com/oz123/coredns-netbox-plugin).\
+- [Kea DHCP](https://www.isc.org/kea/).\
+- [Netbox](https://netboxlabs.com/).\
+- [Ansible Core](https://docs.ansible.com/core.html).\
+- [Ansible Rulebook](https://ansible.readthedocs.io/projects/rulebook).\
+- [netbox ansible modules](https://github.com/netbox-community/ansible_modules).\
+- [community.proxmox](https://github.com/ansible-collections/community.proxmox) this is recent folk from community.general.
 
 ---
 
