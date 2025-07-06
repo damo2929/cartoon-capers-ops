@@ -1,0 +1,5 @@
+# checks slug names and prevents illegal chars in slugs that will break ansible dynamic inventorying.
+class SlugValidator(CustomValidator):
+       def validate(self, instance, request):
+          if not re.match(r'^[a-z0-9_]*$', instance.slug ):
+             self.fail("Slug need to be all lower case and only have a-z 0-9 and _ otherwise it causes issues & warnings with Ansible dynamic inventory", field='slug')
